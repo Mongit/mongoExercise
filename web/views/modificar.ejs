@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modificar</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Modifica tu producto</h1>
+    <form method="post" action="/modificar">
+        <input type="hidden" name="id" value="<%= id %>">
+        Producto: <input type="text" name="name" value="<%=name%>"/>
+        Precio: <input type="text" name="price" value="<%=price%>"/>
+        <input type="submit" value="Guardar"/>
+    </form>
+  </body>
+</html>

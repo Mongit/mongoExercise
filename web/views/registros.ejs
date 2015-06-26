@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registros</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Todos los registros de la base de datos</h1>
+      <ul>
+          <% productos.forEach(function(producto) { %>
+            <li>
+                <!-- Agrega otro archivo-->
+                <% include productoPartial%>
+            </li>
+          <% }) %>
+      </ul>
+      <a href="/"> Pagina principal</a>
+      <a href="/agregar"> Nuevo producto</a>
+  </body>
+</html>
